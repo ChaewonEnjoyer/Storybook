@@ -81,6 +81,19 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.parallax7 {
+  /* The image used */
+  background-image: url('assets/Designer-15.jpeg');
+  /* Full height */
+  height: 100%; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
 @media only screen and (max-device-width: 1366px) {
   .parallax {
@@ -101,6 +114,9 @@ body, html {
   .parallax6 {
     background-attachment: scroll;
   }
+  .parallax7 {
+    background-attachment: scroll;
+  }
 }
 
 .container{
@@ -117,7 +133,7 @@ body, html {
 <body> 
 <div class="parallax"></div>
 
-<div class="container" style="height:1000px;background-color:red;font-size:36px;">
+<div class="container" style="padding: 10px; height:1000px;background-color:red;font-size:36px;">
     <p>Beneath the twilight sky, Julian, with curly black hair and piercing blue eyes, perched on his gleaming blue BMW E30 M3. His hard work had sculpted his success, but the cost was solitude. The car, a symbol of affluence, echoed the emptiness within.</p>
     <p>As the sun dipped, shadows unveiled the stark truth: the pursuit of wealth had left Julian isolated. The once vibrant connections faded, replaced by the cold solitude of his car's polished exterior. Alone, he realized the hollowness of his achievements.</p>
     <p>Climbing into the driver's seat, the engine's purr accompanied Oliver on a solitary journey through empty streets. The town lights dimmed in the rearview mirror, urging him to choose between the desolate road he'd traveled and the possibility of rekindling lost connections. 
@@ -165,6 +181,13 @@ Tip: Try to remove the background-attachment property to remove the scrolling ef
     </div>
     
 <div class="parallax6"></div>
+
+<div style="height:1000px;background-color:red;font-size:36px">
+    This div is just here to enable scrolling.
+    Tip: Try to remove the background-attachment property to remove the scrolling effect.
+    </div>
+    
+<div class="parallax7"></div>
 
 </body>
 </html>
